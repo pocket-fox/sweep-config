@@ -196,7 +196,7 @@
         //│   KEYBOARD    │   KEYBOARD    │ BT CLEAR ALL  │   BT CLEAR    │ TOGGLE OUTPUT │   │      F6       │      F7       │      F8       │      F9       │      F10      │
         //│    REBOOT     │   BOOT MODE   │               │   CURRENT     │     MODE      │   │               │               │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &sys_reset      &bootloader     &bt BT_CLR_ALL  &bt BT_CLR      &out OUT_TOG        &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
+          &sys_reset      &bootloader     &none           &bt BT_CLR      &out OUT_TOG        &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
         //│               │               │               │               │               │   │      F11      │      F12      │      F13      │      F14      │  GAME LAYER   │
