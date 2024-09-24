@@ -26,13 +26,13 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 3>;
-            then-layer = <4>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <1 2>;
+    //         then-layer = <4>;
+    //     };
+    // };
 
         // LAYER TEMPLATE \\
     
@@ -68,28 +68,28 @@
             bindings = <
         //╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       Q       │       W       │       F       │       P       │       B       │   │       J       │       L       │       U       │       Y       │      ; :      │
+        //│       Q       │       W       │       E       │       R       │       T       │   │       Y       │       U       │       I       │       O       │       P       │
         //│               │               │               │               │               │   │               │               │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &kp Q           &kp W           &kp F           &kp P           &kp B               &kp J           &kp L           &kp U           &kp Y           &kp SEMICOLON
+          &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       A       │       R       │       S       │       T       │       G       │   │       M       │       N       │       E       │       I       │       O       │
+        //│       A       │       S       │       D       │       F       │       G       │   │       H       │       J       │       K       │       L       │      ; :      │
         //│     -ESC-     │     -ALT-     │    -SHIFT-    │   -CONTROL-   │               │   │               │   -CONTROL-   │    -SHIFT-    │     -ALT-     │     -ESC-     │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &ht ESC A       &ht LALT R      &ht LSHFT S     &ht LCTRL T     &kp G               &kp M           &ht RCTRL N     &ht RSHFT E     &ht RALT I      &ht ESC O
+          &ht ESC A       &ht LALT S      &ht LSHFT D     &ht LCTRL F     &kp G               &kp H           &ht RCTRL J     &ht RSHFT K     &ht RALT L      &ht ESC SEMICOLON
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       Z       │       X       │       C       │       D       │       V       │   │       K       │       H       │      , <      │      . >      │      / ?      │
+        //│       Z       │       X       │       C       │       V       │       B       │   │       N       │       M       │      , <      │      . >      │      / ?      │
         //│               │               │               │   -COMMAND-   │               │   │               │   -COMMAND-   │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &kp Z           &kp X           &kp C           &ht LCMD D      &kp V               &kp K           &ht RCMD H      &kp COMMA       &kp DOT         &kp FSLH
+          &kp Z           &kp X           &kp C           &ht LCMD V      &kp B               &kp N           &ht RCMD M      &kp COMMA       &kp DOT         &kp FSLH
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
         //                                                │      TAB      │     SPACE     │   │   BACKSPACE   │    RETURN     │
-        //                                                │  -NUM LAYER-  │  -SYM LAYER-  │   │  -NAV LAYER-  │   -DELETE-    │
+        //                                                │  -NUM LAYER-  │  -NAV LAYER-  │   │   -DELETE-    │  -SYM LAYER-  │
         //                                                │               │               │   │               │               │
-                                                          &lt NUM TAB     &lt SYM SPACE       &lt NAV BSPC    &ht DEL RET
+                                                          &lt NUM TAB     &lt NAV SPACE       &ht DEL BSPC    &lt SYM RET
         //                                                ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
             >;
         };
@@ -116,10 +116,10 @@
           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
+        //                                                │               │               │   │               │    RETURN     │
+        //                                                │               │               │   │               │ -ADMIN LAYER- │
         //                                                │               │               │   │               │               │
-        //                                                │               │               │   │               │               │
-        //                                                │               │               │   │               │               │
-                                                          &none           &none               &trans          &trans           
+                                                          &none           &none               &trans          &lt ADM RET           
         //                                                ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
             >;
         };
@@ -140,16 +140,16 @@
           &kp ESC         &kp LBKT        &kp LBRC        &kp LPAR        &kp MINUS           &kp PLUS        &kp RPAR        &kp RBRC        &kp RBKT        &kp ESC
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│               │               │       %       │       *       │               │   │               │       =       │       @       │               │               │
+        //│               │       '       │       %       │       *       │               │   │               │       =       │       @       │       "       │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
           &none           &kp SQT         &kp PRCNT       &kp STAR        &none               &none           &kp EQUAL       &kp AT          &kp DQT         &none
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
-        //                                                │               │               │   │       _       │               │
+        //                                                │      TAB      │       _       │   │               │               │
+        //                                                │ -ADMIN LAYER- │               │   │               │               │
         //                                                │               │               │   │               │               │
-        //                                                │               │               │   │               │               │
-                                                          &none           &none               &kp UNDER       &trans
+                                                          &lt ADM TAB     &kp UNDER           &none           &none
         //                                                ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
             >;
         };
