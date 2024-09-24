@@ -68,28 +68,28 @@
             bindings = <
         //╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       Q       │       W       │       E       │       R       │       T       │   │       Y       │       U       │       I       │       O       │       P       │
+        //│       Q       │       W       │       F       │       P       │       B       │   │       J       │       L       │       U       │       Y       │      ; :      │
         //│               │               │               │               │               │   │               │               │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P
+          &kp Q           &kp W           &kp F           &kp P           &kp B               &kp J           &kp L           &kp U           &kp Y           &kp SEMICOLOM
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       A       │       S       │       D       │       F       │       G       │   │       H       │       J       │       K       │       L       │      ; :      │
+        //│       A       │       R       │       S       │       T       │       G       │   │       M       │       N       │       E       │       I       │       O       │
         //│     -ESC-     │     -ALT-     │    -SHIFT-    │   -CONTROL-   │               │   │               │   -CONTROL-   │    -SHIFT-    │     -ALT-     │     -ESC-     │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &ht ESC A       &ht LALT S      &ht LSHFT D     &ht LCTRL F     &kp G               &kp H           &ht RCTRL J     &ht RSHFT K     &ht RALT L      &ht ESC SEMICOLON
+          &ht ESC A       &ht LALT R      &ht LSHFT S     &ht LCTRL T     &kp G               &kp M           &ht RCTRL N     &ht RSHFT E     &ht RALT I      &ht ESC O
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│               │               │               │               │               │   │               │               │               │               │               │
-        //│       Z       │       X       │       C       │       V       │       B       │   │       N       │       M       │      , <      │      . >      │      / ?      │
+        //│       Z       │       X       │       C       │       D       │       V       │   │       K       │       H       │      , <      │      . >      │      / ?      │
         //│               │               │               │   -COMMAND-   │               │   │               │   -COMMAND-   │               │               │               │
         //│               │               │               │               │               │   │               │               │               │               │               │
-          &kp Z           &kp X           &kp C           &ht LCMD V      &kp B               &kp N           &ht RCMD M      &kp COMMA       &kp DOT         &kp FSLH
+          &kp Z           &kp X           &kp C           &ht LCMD D      &kp V               &kp K           &ht RCMD H      &kp COMMA       &kp DOT         &kp FSLH
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
         //                                                │      TAB      │     SPACE     │   │   BACKSPACE   │    RETURN     │
         //                                                │  -NUM LAYER-  │  -NAV LAYER-  │   │   -DELETE-    │  -SYM LAYER-  │
         //                                                │               │               │   │               │               │
-                                                          &lt NUM TAB     &lt NAV SPACE       &ht DEL BSPC    &lt SYM RET
+                                                          &lt NUM TAB     &lt NAV SPACE       &lt SYM BSPC    &ht DEL RET
         //                                                ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
             >;
         };
