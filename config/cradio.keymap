@@ -300,7 +300,7 @@
         //                                                │               │               │   │  LEFT CLICK   │  RIGHT CLICK  │
         //                                                │               │               │   │               │               │
         //                                                │               │               │   │               │               │
-                                                          &none           &none               &none            &none                
+                                                          &none           &none               &mkp LCLK       &mkp RCLK                 
         //                                                ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
             >;
         };
