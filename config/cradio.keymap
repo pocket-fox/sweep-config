@@ -127,7 +127,7 @@
     };
 
     gt: game_trans {
-      compatible = "zmk,behavior-macro";
+      compatible = "zmk,behavior-macro-two-param";
       wait-ms = <0>;
       tap-ms = <0>;
       #binding-cells = <2>;
