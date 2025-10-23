@@ -158,6 +158,17 @@
 			bindings = <&kp>, <&kp>;
 		};
 
+	hm:
+		home_row_mod {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-celss = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <175>
+			require-prior-idle-ms = <100>;
+			bindings = <&kp>, <&kp>;
+		}
+
 	hml:
 		home_row_mod_left {
 			compatible = "zmk,behavior-hold-tap";
@@ -470,7 +481,7 @@
    │       A       │       R       │       S       │       H       │       G       ││               │               │               │               │               │
    │               │     -ALT-     │    -SHIFT-    │   -CONTROL-   │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &kp A           &hml LALT R     &hml LSHFT S    &hml LCTRL H    &kp G            &none           &none           &none           &none           &none           
+   &kp A           &hm LALT R      &hm LSHFT S     &hm LCTRL H     &kp G            &none           &none           &none           &none           &none           
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
    │       Z       │       X       │       C       │       D       │       V       ││               │               │               │               │  ALPHA LAYER  │
