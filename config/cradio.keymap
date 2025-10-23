@@ -23,7 +23,7 @@
 };
 
 &caps_word {
-	/ delete-property / ignore-modifiers;
+	/delete-property/ ignore-modifiers;
 	continue-list = <UNDERSCORE MINUS BACKSPACE DELETE LSHFT RSHFT>;
 };
 // LAYER TEMPLATE & KEY INDICES \\
