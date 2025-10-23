@@ -261,7 +261,7 @@
    │    COMMAND    │      ALT      │     SHIFT     │    CONTROL    │               ││       ←       │       ↓       │       ↑       │       →       │               │
    │               │               │               │               │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   & kp LCMD       &kp LALT        &kp LSHFT       &kp LCTRL       &none            &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none
+   &kp LCMD        &kp LALT        &kp LSHFT       &kp LCTRL       &none            &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
    │               │               │               │               │               ││     HOME      │   PAGE DOWN   │   PAGE UP     │      END      │               │
