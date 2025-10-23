@@ -158,14 +158,6 @@
 			bindings = <&kp>, <&kp>;
 		};
 
-	td:
-		tap_dance {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <2>;
-			tapping-term-ms = <200>;
-			bindings = <&kp>, <&kp>;
-		};
-
 	hml:
 		home_row_mod_left {
 			compatible = "zmk,behavior-hold-tap";
@@ -191,6 +183,87 @@
 			hold-trigger-key-positions = <KEYS_L THUMBS>;
 			hold-trigger-on-release;
 		};
+
+	td0:
+		tap_dance_0 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N0>, <&kp KP_N0>;
+		};
+
+	td1:
+		tap_dance_1 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N1>, <&kp KP_N1>;
+		};
+
+	td2:
+		tap_dance_2 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N2>, <&kp KP_N2>;
+		};
+
+	td3:
+		tap_dance_3 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N3>, <&kp KP_N3>;
+		};
+
+	td4:
+		tap_dance_4 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N4>, <&kp KP_N4>;
+		};
+
+	td5:
+		tap_dance_5 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N5>, <&kp KP_N5>;
+		};
+
+	td6:
+		tap_dance_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N6>, <&kp KP_N6>;
+		};
+
+	td7:
+		tap_dance_7 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N7>, <&kp KP_N7>;
+		};
+
+	td8:
+		tap_dance_8 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N8>, <&kp KP_N8>;
+		};
+
+	td9:
+		tap_dance_9 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp N9>, <&kp KP_N9>;
+		};
+
 	};
 
 	keymap {
@@ -385,19 +458,19 @@
 
 		blender_alpha_layer {
 			bindings =
-			    <
+			    <kh,./
 /* ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
    │               │               │               │               │               ││               │               │               │               │               │
-   │       Q       │       W       │       F       │       P       │       B       ││               │               │               │               │               │
+   │       K       │       W       │       F       │       P       │       B       ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &kp Q 		   &kp W 		   &kp F 		   &kp P 		   &kp B 		    &none 			&none 			&none 			&none 			&none
+   &kp K 		   &kp W 		   &kp F 		   &kp P 		   &kp B 		    &none 			&none 			&none 			&none 			&none
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
-   │       A       │       R       │       S       │       T       │       G       ││               │               │               │               │               │
+   │       A       │       R       │       S       │       H       │       G       ││               │               │               │               │               │
    │               │     -ALT-     │    -SHIFT-    │   -CONTROL-   │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &kp A           &hml LALT R     &hml LSHFT S    &hml LCTRL T    &kp G            &none           &none           &none           &none           &none           
+   &kp A           &hml LALT R     &hml LSHFT S    &hml LCTRL H    &kp G            &none           &none           &none           &none           &none           
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
    │       Z       │       X       │       C       │       D       │       V       ││               │               │               │               │  ALPHA LAYER  │
@@ -422,19 +495,19 @@
    │       +*      │       1       │       2       │       3       │               ││               │               │               │               │               │
    │               │       1*      │       2*      │       3*      │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &kp KP_PLUS     &td N1 KP_N1    &td N2 KP_N2	   &td N3 KP_N3	   &none 		    &none 			&none 			&none 			&none 			&none
+   &kp KP_PLUS     &td0            &td1        	   &td2        	   &none 		    &none 			&none 			&none 			&none 			&none
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
    │       0       │       4       │       5       │       6       │       /*      ││               │               │               │               │               │
    │       0*      │       4*      │       5*      │       6*      │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &td N0 KP_N0    &td N4 KP_N4    &td N5 KP_N5    &td N6 KP_N6    &kp KP_SLASH     &none           &none           &none           &none           &none           
+   &td3            &td4            &td5            &td6            &kp KP_SLASH     &none           &none           &none           &none           &none           
 /* ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    │               │               │               │               │               ││               │               │               │               │               │
    │       -*      │       X       │       C       │       9       │       .*      ││               │               │               │               │               │
    │               │               │               │       9*      │               ││               │               │               │               │               │
    │               │               │               │               │               ││               │               │               │               │               │ */
-   &kp KP_MINUS    &td N7 KP_N7    &td N8 KP_N8    &td N9 KP_N9    &kp KP_DOT       &none           &none           &none           &none           &to ABC
+   &kp KP_MINUS    &td7            &td8            &td9            &kp KP_DOT       &none           &none           &none           &none           &to ABC
 /* ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
                                                    │               │               ││               │               │
                                                    │  STICKY BNUM  │     SPACE     ││               │               │
