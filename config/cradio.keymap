@@ -130,7 +130,7 @@
 			compatible = "zmk,behavior-macro";
 			wait-ms = <0>;
 			tap-ms = <0>;
-            binding-cells = <0>;
+            #binding-cells = <0>;
 			bindings = < &macro_tap &kp COLON >, < &macro_tap &kp COLON > ;
 		};
 
@@ -157,7 +157,7 @@
 	hml:
 		home_row_mod_left {
 			compatible = "zmk,behavior-hold-tap";
-#binding-cells = <2>;
+			#binding-cells = <2>;
 			flavor = "balanced";
 			tapping-term-ms = <280>;
 			quick-tap-ms = <175>;
@@ -170,7 +170,7 @@
 	hmr:
 		home_row_mod_right {
 			compatible = "zmk,behavior-hold-tap";
-#binding-cells = <2>;
+			#binding-cells = <2>;
 			flavor = "balanced";
 			tapping-term-ms = <280>;
 			quick-tap-ms = <175>;
