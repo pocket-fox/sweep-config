@@ -493,7 +493,7 @@
                                                    │  STICKY BNUM  │     SPACE     ││               │               │
                                                    │               │  -BNAV LAYER- ││               │               │
                                                    │               │               ││               │               │                                                 */
-			                                       &sl NUM         &lt NAV SPACE    &none           &none
+			                                       &sl BNUM        &lt BNAV SPACE   &none           &none
 /*                                                 ╰───────────────┴───────────────╯╰───────────────┴───────────────╯                                                 */
 			        > ;
 		};
