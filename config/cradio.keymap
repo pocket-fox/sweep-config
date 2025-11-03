@@ -17,7 +17,7 @@
 
 #define BABC 6
 #define BDEF 7
-#define BNAV 8
+#define BNUM 8
 
 /* clang-format off */
 
