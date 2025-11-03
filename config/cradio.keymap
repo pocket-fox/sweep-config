@@ -525,7 +525,7 @@
                                                    │  STICKY BNUM  │     SPACE     ││               │               │
                                                    │               │  -BNAV LAYER- ││               │               │
                                                    │               │               ││               │               │                                                 */
-			                                       &sl BNUM        &lt BNAV SPACE   &none           &none
+			                                       &sl BNUM        &lt BDEF SPACE   &none           &none
 /*                                                 ╰───────────────┴───────────────╯╰───────────────┴───────────────╯                                                 */
 			        > ;
 		};
