@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: ferris
+  - board: nice_nano//zmk
     shield: cradio_left
-  - board: ferris
+  - board: nice_nano//zmk
     shield: cradio_right
   - board: ferris
     shield: settings_reset
